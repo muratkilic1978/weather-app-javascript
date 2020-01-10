@@ -16,9 +16,10 @@ body {
 }
 
 .location,
-.temperature {
+.temperature,
+.humidity            {
     height: 30vh;
-    width: 50%;
+    width: 35%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -34,6 +35,16 @@ body {
     cursor: pointer;
 }
 
+.humidity {
+    flex-direction: row;
+}
+
+.humidity-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
 .degree-section span {
     margin: 6px;
     font-size: 1.9rem;
@@ -41,5 +52,15 @@ body {
 }
 
 .degree-section h2 {
+    font-size: 2.0rem;
+}
+
+.humidity-section span {
+    margin: 6px;
+    font-size: 1.9rem;
+    font-weight: 300;
+}
+
+.humidity-section h2 {
     font-size: 2.0rem;
 }
